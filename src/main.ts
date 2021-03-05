@@ -1,7 +1,6 @@
 import type { Plugin } from 'vue'
 
 import components from './components'
-export default components
 
 export const VaguerComponents: Plugin = {
   install(app) {
@@ -12,5 +11,4 @@ export const VaguerComponents: Plugin = {
 }
 
 // START_EXPORTS
-export { default as VaguerButton } from './components/VaguerButton.vue'
 // END_EXPORTS

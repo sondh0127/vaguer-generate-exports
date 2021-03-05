@@ -1,5 +1,5 @@
 {
-  "name": "vaguer",
+  "name": "vaguer-generate-exports",
   "version": "0.0.0",
   "files": [
     "dist"
@@ -9,7 +9,7 @@
   "types": "./dist/main.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "node build/exports.js && vite build && tsc --emitDeclarationOnly"
+    "build": "vite build"
   },
   "exports": {
     ".": {
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "esno": "0.4.4",
+    "rollup-plugin-typescript2": "^0.30.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -40,7 +41,9 @@
   },
   "eslintConfig": {
     "extends": "@antfu/eslint-config",
-    "ignorePatterns": ["build/**/*.js"],
+    "ignorePatterns": [
+      "build/**/*.js"
+    ],
     "rules": {
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "off"
