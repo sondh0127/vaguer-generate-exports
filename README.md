@@ -5,7 +5,7 @@ This repo provides a basic setup for developing component libraries in Vite with
 ## Features
 - Type Generation
 - Tailwind CSS via [WindiCSS](https://windicss.netlify.app/)
-- Automatically export and register all components in `./src/components`
+- Automatically export and register all components in `./src/components` via [vite-plugin-generate-exports](https://github.com/jacobclevenger/vite-plugin-generate-exports)
 - `./demo` folder where you can test your components
 
 ## Checklist
