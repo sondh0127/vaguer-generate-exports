@@ -13,6 +13,7 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "declaration": true,
     "declarationDir": "./dist",
     "outDir": "./dist",

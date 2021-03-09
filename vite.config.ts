@@ -39,22 +39,13 @@ const config = defineConfig({
     {
       apply: 'build',
       ...ts({
-        tsconfig: './tsconfig.json',
-        check: false,
         useTsconfigDeclarationDir: true,
       }),
     },
   ],
 })
 
-export default ({ command }) => {
-  if (command === 'serve') {
-    return config
-  }
-  else {
-    return {
-      ...config,
-      esbuild: false,
-    }
-  }
-}
+export default ({ command }) => ({
+  ...config,
+  esbuild: command === 'serve',
+})
