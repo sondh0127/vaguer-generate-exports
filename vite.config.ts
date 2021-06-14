@@ -11,7 +11,7 @@ declare const __dirname: string
 const config = defineConfig({
   build: {
     lib: {
-      name: 'Vaguer',
+      name: 'VueInteractive',
       entry: path.resolve(__dirname, 'src/main.ts'),
     },
     rollupOptions: {

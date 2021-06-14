@@ -6,7 +6,7 @@
   <div>
     My Components
     <div>
-      <VaguerButton>Hello World</VaguerButton>
+      <InteractiveButton>Hello World</InteractiveButton>
     </div>
   </div>
 </template>

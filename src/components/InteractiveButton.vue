@@ -2,13 +2,13 @@
 </script>
 
 <template>
-  <button class="vaguer-button">
+  <button class="button">
     <slot />
   </button>
 </template>
 
 <style lang="postcss">
-.vaguer-button {
+.button {
   @apply
     border-none
     bg-teal-500
