@@ -43,6 +43,9 @@ const config = defineConfig({
       }),
     },
   ],
+  optimizeDeps: {
+    exclude: ['vue-demi'],
+  },
 })
 
 export default ({ command }) => ({
